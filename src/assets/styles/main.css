@@ -1,4 +1,15 @@
+header {
+  display: flex;
+  
+}
 
+.center-slogan {
+  text-align: left;
+}
+
+.center-slogan img {
+  width: 60%;
+}
 
 .service-list {
     display: flex;
