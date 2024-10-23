@@ -1,9 +1,9 @@
 import React from 'react';
 import './assets/styles/tailwind.css';
 import './assets/styles/main.css';
-import Header from './components/Header';
-import Services from './components/Services';
-import Hero from './components/Hero';
+import Header from './components/Header/Header';
+import Services from './components/ServiceList/Services';
+import Hero from './components/Hero/Hero';
 
 const App: React.FC = () => {
   return (
