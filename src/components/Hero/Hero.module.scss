@@ -59,10 +59,34 @@
     z-index: 9;
 }
 
-.get-quote-img {
+.getQuote {
     position: absolute;
-    top: 0%;
+    top: 15%;
     left: 70%;
-    width: 100%;
+    width: 50%;
     z-index: 10;
+}
+
+.getStarted {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    margin-top: 1rem;
+    z-index: 999;
+
+    button {
+        background-color: #0a89bb;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #7c4f8b;
+        }
+    }
 }

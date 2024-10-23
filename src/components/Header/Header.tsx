@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.module.css';
+import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
                 src="https://see.fontimg.com/api/rf5/G3lEZ/NTEyNGQ1ODUyMjQzNDQ3MGI4M2Q3NzM4YTkwYmZkYzgub3Rm/Y2hpY2sgY29tcGFyZQ/st-noodles-grotesque.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65"
                 alt="Advertising fonts"
               />
-              <p className="ml-0">Peck Out the Best Deals</p>
+              <p className={`ml-0 ${styles.logoSlogan}`}>Peck Out the Best Deals</p>
             </a>
             
           </div>

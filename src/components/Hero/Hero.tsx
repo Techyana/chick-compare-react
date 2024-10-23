@@ -23,6 +23,9 @@ const Hero: React.FC = () => {
         <source src="/src/assets/videos/205691-927672681_small.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div className={styles.getQuote}>
+        <img src="/src/assets/images/get_a_quote_silver_badge_transparency.png" alt="Get a Quote" width="100" />
+      </div>
       <div className={styles.eyesImg}>
         <img src="/src/assets/images/cartoon-eyes.png" alt="Eyes" width="150" />
       </div>
@@ -30,6 +33,10 @@ const Hero: React.FC = () => {
         <h2 className={`text-slate-900 text-4xl font-bold mb-4 ${styles.textMargin}`}>Compare Insurance and Financial Products Easily</h2>
         <p className="text-slate-900 text-lg italic">Find the best deals from top South African companies</p>
       </div>
+      <button className={`bg-sky-600 text-white text-lg font-bold py-2 px-4 rounded-lg mt-4 ${styles.getStarted}`}>
+        Get Started
+
+      </button>
       <div className="absolute top-0 left-0 w-full h-full bg-slate-50 bg-opacity-10 z-1"></div>
     </section>
   );
