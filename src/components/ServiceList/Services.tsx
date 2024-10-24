@@ -7,7 +7,6 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-8 bg-gray-100">
       <div className="container mx-auto">
-        <h2 className="text-center text-3xl font-bold mb-8">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Car Insurance */}
           <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
