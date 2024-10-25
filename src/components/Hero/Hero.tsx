@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative h-screen overflow-hidden">
+    <section id="hero" className="relative h-screen overflow-hidden mt-10">
       <video
         id="hero-video"
         autoPlay
@@ -37,7 +37,6 @@ const Hero: React.FC = () => {
         Get Started
 
       </button>
-      <div className="absolute top-0 left-0 w-full h-full bg-slate-50 bg-opacity-10 z-1"></div>
     </section>
   );
 };

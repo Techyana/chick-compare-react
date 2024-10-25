@@ -4,12 +4,15 @@
     margin: 0px;
 }
 
-header img {
-    width: 80%;
+.logo {
+    max-width: 60%;
+    height: auto;
 }
 
 .logoSlogan {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: #333;
     text-align: left;    
     font-family: "Lilita One", sans-serif;
+    margin-top: 0.5rem;
 }

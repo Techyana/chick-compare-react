@@ -14,8 +14,11 @@ section {
   gap: 1.5rem;
 }
 
-.bg-white {
+.bgWhite {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .shadow-lg {
@@ -34,8 +37,9 @@ section {
   margin-top: 0.5rem;
 }
 
-.text-center {
-  text-align: center;
+.textAlign {
+  text-align: left;
+  z-index: 999;
 }
 
 .text-3xl {
@@ -58,4 +62,49 @@ section {
 
 .block {
   display: block;
+}
+
+.bgLayer {
+  position: relative;
+  background-color: #0f766e; /* Equivalent to bg-teal-700 */
+  padding: 2rem 0;
+}
+
+.bgLayer .anchor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38%;
+  height: auto;
+  opacity: 1; /* Adjust opacity as needed */
+  z-index: 2;
+}
+
+.bgLayer .anchorTwo {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: auto;
+  opacity: 0.7; /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.bgLayer .anchorThree {
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 58%;
+  height: auto;
+  opacity: 0.7; /* Adjust opacity as needed */
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.service-container {
+  position: relative;
+  z-index: 2;
 }/*# sourceMappingURL=Dashboard.module.css.map */

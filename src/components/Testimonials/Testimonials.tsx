@@ -12,19 +12,19 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     name: "Azola",
-    image: "/src/assets/images/jessica.jpg",
+    image: "/src/assets/images/Capelanet_Lady.png",
     review: "Chick-Compare helped me find the best car insurance deal. I'm saving so much now!",
     rating: 5
   },
   {
     name: "Michael",
-    image: "/src/assets/images/michael.jpg",
+    image: "/src/assets/images/OIG (7.png",
     review: "The process was so easy and the offers were amazing. Highly recommend!",
     rating: 4
   },
   {
     name: "Thabo",
-    image: "/src/assets/images/emily.jpg",
+    image: "/src/assets/images/tetyana.png",
     review: "I found the perfect health insurance for my family. Great experience!",
     rating: 5
   }

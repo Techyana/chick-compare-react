@@ -13,15 +13,15 @@ const Services: React.FC = () => {
             <Carousel autoPlay interval={3000} infiniteLoop showArrows={false} showIndicators={false} showStatus={false}>
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-14 184530.png" alt="Car insurance" />
-              </div>
-              <div>
-                <img src="/src/assets/images/Screenshot 2024-10-17 101044.png" alt="Another car insurance image" />
-              </div>
+              </div>             
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-17 114110.png" alt="Another car insurance image" />
               </div>
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-14 193259.png" alt="Another car insurance image" />
+              </div>
+              <div>
+                <img src="/src/assets/images/Screenshot 2024-10-17 101044.png" alt="Another car insurance image" />
               </div>
             </Carousel>
             <div className={`p-4 text-center ${styles.serviceTile}`}>
@@ -55,17 +55,18 @@ const Services: React.FC = () => {
           {/* Home Insurance */}
           <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
             <Carousel autoPlay interval={3000} infiniteLoop showArrows={false} showIndicators={false} showStatus={false}>
+            
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-14 184530.png" alt="Home insurance" />
               </div>
               <div>
-                <img src="/src/assets/images/Screenshot 2024-10-17 101044.png" alt="Another home insurance image" />
+                <img src="/src/assets/images/Screenshot 2024-10-14 193259.png" alt="Another home insurance image" />
               </div>
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-17 114110.png" alt="Another home insurance image" />
               </div>
               <div>
-                <img src="/src/assets/images/Screenshot 2024-10-14 193259.png" alt="Another home insurance image" />
+                <img src="/src/assets/images/Screenshot 2024-10-17 101044.png" alt="Another home insurance image" />
               </div>
             </Carousel>
             <div className="p-4 text-center">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import './Footer.module.scss';
 
 const Footer: React.FC = () => {
@@ -13,6 +13,9 @@ const Footer: React.FC = () => {
           <p className="text-sm">Phone: (021) 456-7890</p>
         </div>
         <div className="flex space-x-4">
+        <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <FaWhatsapp size={24} />
+          </a>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <FaFacebookF size={24} />
           </a>
