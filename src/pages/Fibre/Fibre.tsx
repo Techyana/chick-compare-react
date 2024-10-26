@@ -5,14 +5,14 @@ import './Fibre.module.scss';
 
 const Fibre: React.FC = () => {
   const isps = [
-    { name: 'ISP One', price: 'R599', speed: '100Mbps', link: '/isp-one' },
-    { name: 'ISP Two', price: 'R699', speed: '200Mbps', link: '/isp-two' },
-    { name: 'ISP Three', price: 'R799', speed: '300Mbps', link: '/isp-three' },
+    { name: 'axxess', price: 'R599', speed: '100Mbps', link: '/isp-one' },
+    { name: 'afrihost', price: 'R699', speed: '200Mbps', link: '/isp-two' },
+    { name: 'rain', price: 'R799', speed: '300Mbps', link: '/isp-three' },
     // Add up to 6 ISPs
   ];
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 mt-20">
       <Link to="/" className="flex items-center text-teal-700 hover:text-teal-900 mb-4">
         <FaArrowLeft className="mr-2" />
         <span>Back to Dashboard</span>
