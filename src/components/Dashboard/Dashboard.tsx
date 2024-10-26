@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaWifi, FaCar, FaHeartbeat, FaCross, FaPiggyBank, FaMobile } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import styles from './Dashboard.module.scss';
 
 interface Service {
@@ -21,15 +22,14 @@ const Dashboard: React.FC = () => {
     return (
         <section className={styles.bgLayer}>
             <img src="/src/assets/images/monster-banner-services.png" alt="Chick-Compare" />
-            <img src="/src/assets/images/Capelanet_Anchor.png" alt="Chick-Compare-Anchor" className={styles.anchor}/>
             <div className={`container mx-auto ${styles.serviceContainer}`}>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className={`text-center ${styles.bgWhite} shadow-lg rounded-lg p-4`}>
-                            <a href={service.link} className="block">
+                        <div key={index} className="text-center bg-white shadow-lg rounded-lg p-4">
+                            <Link to={service.link} className="block">
                                 <div className="flex justify-center">{service.icon}</div>
                                 <h3 className="text-xl font-semibold mt-2">{service.name}</h3>
-                            </a>
+                            </Link>
                         </div>
                     ))}
                 </div>

@@ -42,7 +42,7 @@ const Testimonials: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2">{testimonial.name}</h3>
               <p className="text-gray-700 mb-2">{testimonial.review}</p>
               <div className="flex justify-center mb-2">
-                {[...Array(testimonial.rating)].map((star, i) => (
+                {[...Array(testimonial.rating)].map((_, i) => (
                   <FaStar key={i} className="text-yellow-500" />
                 ))}
               </div>
