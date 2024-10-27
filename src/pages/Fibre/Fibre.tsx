@@ -19,7 +19,7 @@ const Fibre: React.FC = () => {
       </Link>
       <h1 className="text-3xl font-bold mb-4">Fibre Deals</h1>
       <h2 className="text-2xl font-semibold mb-2">LTE Deals</h2>
-      <p className="mb-4">Find the best LTE deals available...</p>
+      <p className="mb-4">Find the best Fibre & LTE deals available...</p>
 
       <h2 className="text-2xl font-semibold mb-2">ISP Comparisons</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -12,6 +12,7 @@ import HowItWorks from './components/HowItWorks/HowItWorks';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import Fibre from './pages/Fibre/Fibre';
+import Car from './pages/Car/Car';
 
 const App: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ const App: React.FC = () => {
             <Footer />
           </>} />
           <Route path="/fibre" element={<Fibre />} />
+          <Route path="/car-insurance" element={<Car />} />
           {/* Add routes for other services */}
         </Routes>
       </div>
