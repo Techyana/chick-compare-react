@@ -1,0 +1,40 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .text-teal-700 {
+    color: #4dc0b5;
+  }
+  
+  .hover\:text-teal-900:hover {
+    color: #38a89d;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }

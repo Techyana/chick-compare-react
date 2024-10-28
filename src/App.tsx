@@ -13,6 +13,7 @@ import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import Fibre from './pages/Fibre/Fibre';
 import Car from './pages/Car/Car';
+import Funeral from './pages/Funeral/Funeral';
 
 const App: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           </>} />
           <Route path="/fibre" element={<Fibre />} />
           <Route path="/car-insurance" element={<Car />} />
+          <Route path="/funeral-cover" element={<Funeral />} />
           {/* Add routes for other services */}
         </Routes>
       </div>
