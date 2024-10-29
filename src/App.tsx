@@ -12,7 +12,10 @@ import HowItWorks from './components/HowItWorks/HowItWorks';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import Fibre from './pages/Fibre/Fibre';
+import Phone from './pages/Phone/Phone';
 import Car from './pages/Car/Car';
+import Credit from './pages/Credit/Credit';
+import Health from './pages/Health/Health';
 import Funeral from './pages/Funeral/Funeral';
 
 const App: React.FC = () => {
@@ -32,7 +35,10 @@ const App: React.FC = () => {
             <Footer />
           </>} />
           <Route path="/fibre" element={<Fibre />} />
+          <Route path="/phone" element={<Phone />} />
           <Route path="/car-insurance" element={<Car />} />
+          <Route path="/credit-money" element={<Credit />} />
+          <Route path="/health-insurance" element={<Health />} />
           <Route path="/funeral-cover" element={<Funeral />} />
           {/* Add routes for other services */}
         </Routes>
