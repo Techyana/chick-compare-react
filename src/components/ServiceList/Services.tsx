@@ -15,7 +15,7 @@ const Services: React.FC = () => {
                 <img src="/src/assets/images/Screenshot 2024-10-14 184530.png" alt="Car insurance" />
               </div>             
               <div>
-                <img src="/src/assets/images/Screenshot 2024-10-17 114110.png" alt="Another car insurance image" />
+                <img src="/src/assets/images/car-insurance/Screenshot 2024-11-02 180035.png" alt="Another car insurance image" />
               </div>
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-14 193259.png" alt="Another car insurance image" />
@@ -60,7 +60,7 @@ const Services: React.FC = () => {
                 <img src="/src/assets/images/Screenshot 2024-10-14 184530.png" alt="Home insurance" />
               </div>
               <div>
-                <img src="/src/assets/images/Screenshot 2024-10-14 193259.png" alt="Another home insurance image" />
+                <img src="/src/assets/images/car-insurance/Screenshot 2024-11-02 180035.png" alt="Another home insurance image" />
               </div>
               <div>
                 <img src="/src/assets/images/Screenshot 2024-10-17 114110.png" alt="Another home insurance image" />
