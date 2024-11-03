@@ -12,19 +12,19 @@ const specialOffers: Offer[] = [
   {
     title: '50% off on Car Insurance',
     description: 'Get half off your first year of car insurance.',
-    image: '/src/assets/images/Screenshot 2024-10-14 193259.png',
+    image: '/assets/images/Screenshot 2024-10-14 193259.png',
     discount: '50%',
   },
   {
     title: '25% off on Health Insurance',
     description: 'Save big on health insurance for the whole family.',
-    image: '/src/assets/images/Screenshot 2024-10-17 114110.png',
+    image: '/assets/images/Screenshot 2024-10-17 114110.png',
     discount: '25%',
   },
   {
     title: '30% off on Fibre Deals',
     description: 'Upgrade your internet with a huge discount.',
-    image: '/src/assets/images/Screenshot 2024-10-14 184530.png',
+    image: '/assets/images/Screenshot 2024-10-14 184530.png',
     discount: '30%',
   },
 ];

@@ -21,7 +21,7 @@ const services: Service[] = [
 const Dashboard: React.FC = () => {
     return (
         <section className={styles.bgLayer}>
-            <img src="/src/assets/images/monster-banner-services.png" alt="Chick-Compare" />
+            <img src="/assets/images/monster-banner-services.png" alt="Cheap-Compare" />
             <div className={`container mx-auto ${styles.serviceContainer}`}>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
