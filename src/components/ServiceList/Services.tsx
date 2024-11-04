@@ -10,6 +10,8 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Car Insurance */}
           <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
+            <h2 className="text-2xl font-semibold text-center py-4">Our Services</h2>
+            <p className="text-center text-gray-700 py-4">We offer a range of insurance services to help you find the best policy for your needs.</p>
             <Carousel autoPlay interval={3000} infiniteLoop showArrows={false} showIndicators={false} showStatus={false}>
               <div>
                 <img src="/assets/images/Screenshot 2024-10-14 184530.png" alt="Car insurance" />

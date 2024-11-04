@@ -34,6 +34,7 @@ const Dashboard: React.FC = () => {
                     ))}
                 </div>
             </div>
+            <img src="/assets/images/Capelanet_Anchor.png" alt="Cheap-Compare" className={styles.anchor} />
         </section>
     );
 };
