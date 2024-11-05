@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
           <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
-          <p className="text-sm">123 Main Road, Stellenbosch, Western Cape</p>
+          <p className="text-sm">123 Main Road, Table View, Cape Farms, Western Cape</p>
           <p className="text-sm">Email: info@cheapcompare.co.za</p>
-          <p className="text-sm">Phone: (021) 456-7890</p>
+          <p className="text-sm">Phone: (+27) 78 736 4020</p>
         </div>
         <div className="flex space-x-4">
         <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white" title="WhatsApp">
