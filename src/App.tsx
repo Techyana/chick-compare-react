@@ -1,6 +1,4 @@
 import React from 'react';
-import './assets/styles/tailwind.css';
-import './assets/styles/main.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -18,12 +16,15 @@ import Car from './pages/Car/Car';
 import Credit from './pages/Credit/Credit';
 import Health from './pages/Health/Health';
 import Funeral from './pages/Funeral/Funeral';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import './assets/styles/main.css';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div>
-        <Header />
+      <ScrollToTop />
+      <Header />
+      <div className="content-wrapper">
         <Routes>
           <Route path="/" element={<>
             <Hero />
@@ -42,7 +43,6 @@ const App: React.FC = () => {
           <Route path="/credit-money" element={<Credit />} />
           <Route path="/health-insurance" element={<Health />} />
           <Route path="/funeral-cover" element={<Funeral />} />
-          
           {/* Add routes for other services */}
         </Routes>
       </div>

@@ -1,0 +1,11 @@
+/* main.css */
+.content-wrapper {
+  margin-top: 7rem; /* Default margin for larger viewports */
+}
+
+/* Adjust margin for smaller viewports */
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin-top: 7rem; /* Adjust as needed for mobile view */
+  }
+}

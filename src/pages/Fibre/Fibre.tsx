@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaArrowLeft, FaGlobe, FaGlobeAfrica, FaRainbow } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Fibre.module.scss';
@@ -10,6 +10,10 @@ const Fibre: React.FC = () => {
     { name: 'Rain', price: 'R799', speed: '300Mbps', link: '/fibre/rain', icon: <FaRainbow size={48} className="text-teal-700" /> },
     // Add up to 6 ISPs
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="container mx-auto p-4 mt-20">
