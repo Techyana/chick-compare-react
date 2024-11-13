@@ -23,6 +23,8 @@ const Fibre: React.FC = () => {
       </Link>
       <h1 className="text-3xl font-bold mb-4">Fibre Deals</h1>
       <h2 className="text-2xl font-semibold mb-2">LTE Deals</h2>
+
+      <img src="/assets/images/copilot_image_1731277252413.jpeg" alt="Fibre Deals" className="w-full h-auto mb-4" />
       <p className="mb-4">Find the best Fibre & LTE deals available...</p>
 
       <h2 className="text-2xl font-semibold mb-2">ISP Comparisons</h2>

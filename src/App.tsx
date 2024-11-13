@@ -35,7 +35,7 @@ const App: React.FC = () => {
             <HowItWorks />
             <FAQ />
             <Footer />
-          </>} />
+          </ >} />
           <Route path="/fibre" element={<Fibre />} />
           <Route path="/fibre/afrihost" element={<Afrihost />} />
           <Route path="/phone" element={<Phone />} />
