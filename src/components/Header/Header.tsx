@@ -17,7 +17,7 @@ const Header: React.FC = () => {
               <img
                 src="https://see.fontimg.com/api/rf5/G3lEZ/NTEyNGQ1ODUyMjQzNDQ3MGI4M2Q3NzM4YTkwYmZkYzgub3Rm/Q0hFQVAgQ09NUEFSRQ/st-noodles-grotesque.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65"
                 alt="Advertising fonts"
-                className={`h-12 ${styles.logo}`}
+                className={`h-8 ${styles.logo}`}
               />
               <p className={`mt-2 ${styles.logoSlogan}`}>Pick Out the Best Deals</p>
             </a>
