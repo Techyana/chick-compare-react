@@ -13,10 +13,7 @@ const Car: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <Link to="/" className="flex items-center text-teal-700 hover:text-teal-900 mb-4">
-        <FaArrowLeft className="mr-2" />
-        <span>Back to Dashboard</span>
-      </Link>
+
       <h1 className="text-2xl font-bold mt-4">Car Insurance Deals</h1>
       <p>Details about car insurance deals...</p>
       <h2 className="text-xl font-semibold mt-4">Insurance Companies</h2>
