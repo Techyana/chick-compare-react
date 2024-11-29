@@ -13,10 +13,6 @@ const Health: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4 mt-20">
-      <Link to="/" className="flex items-center text-teal-700 hover:text-teal-900 mb-4">
-        <FaArrowLeft className="mr-2" />
-        <span>Back to Dashboard</span>
-      </Link>
       <h1 className="text-3xl font-bold mb-4">Health Deals</h1>
       <h2 className="text-2xl font-semibold mb-2">LTE Deals</h2>
       <p className="mb-4">Find the best Health & LTE deals available...</p>
