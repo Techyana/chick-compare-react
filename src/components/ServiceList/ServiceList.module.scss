@@ -8,3 +8,14 @@
     padding-left: 0rem;
 }
 
+.image-container {
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-height: 100%;
+    max-width: 100%;
+  }

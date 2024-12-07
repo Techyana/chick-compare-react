@@ -8,7 +8,6 @@ const Fibre: React.FC = () => {
     { name: 'Axxess', price: 'R599', speed: '100Mbps', link: '/fibre/axxess', icon: <FaGlobe size={48} className="text-teal-700" /> },
     { name: 'Afrihost', price: 'R699', speed: '200Mbps', link: '/fibre/afrihost', icon: <FaGlobeAfrica size={48} className="text-teal-700" /> },
     { name: 'Rain', price: 'R799', speed: '300Mbps', link: '/fibre/rain', icon: <FaRainbow size={48} className="text-teal-700" /> },
-    // Add up to 6 ISPs
   ];
 
   useEffect(() => {
