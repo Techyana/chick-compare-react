@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
@@ -13,14 +14,14 @@ const Header: React.FC = () => {
       <nav className="bg-white p-3 flex items-center justify-between fixed top-0 left-0 w-full shadow-lg z-50">
         <div className="flex items-center justify-between w-full">
           <div className="flex flex-col items-center">
-            <a href="#" className="flex flex-col items-center">
+            <Link to="/" className="flex flex-col items-center">
               <img
                 src="https://see.fontimg.com/api/rf5/G3lEZ/NTEyNGQ1ODUyMjQzNDQ3MGI4M2Q3NzM4YTkwYmZkYzgub3Rm/Q0hFQVAgQ09NUEFSRQ/st-noodles-grotesque.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65"
                 alt="Advertising fonts"
                 className={`h-8 ${styles.logo}`}
               />
               <p className={`mt-2 ${styles.logoSlogan}`}>Pick Out the Best Deals</p>
-            </a>
+            </Link>
           </div>
           <button
             className="text-gray-500 hover:text-gray-700 focus:outline-none lg:hidden"

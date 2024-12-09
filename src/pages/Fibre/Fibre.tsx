@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaGlobe, FaGlobeAfrica, FaRainbow } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Fibre.module.scss';
@@ -9,10 +9,6 @@ const Fibre: React.FC = () => {
     { name: 'Afrihost', price: 'R699', speed: '200Mbps', link: '/fibre/afrihost', icon: <FaGlobeAfrica size={48} className="text-teal-700" /> },
     { name: 'Rain', price: 'R799', speed: '300Mbps', link: '/fibre/rain', icon: <FaRainbow size={48} className="text-teal-700" /> },
   ];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="container mx-auto p-4 mt-20">

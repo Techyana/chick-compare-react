@@ -18,4 +18,9 @@
 .image-container img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=ServiceList.module.css.map */

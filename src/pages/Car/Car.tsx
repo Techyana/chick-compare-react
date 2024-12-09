@@ -1,6 +1,4 @@
-
-import { FaArrowLeft } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './Car.module.scss';
 
 const Car: React.FC = () => {

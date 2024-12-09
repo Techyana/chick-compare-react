@@ -22,29 +22,29 @@ import './assets/styles/main.css';
 const App: React.FC = () => {
   return (
     <Router>
-      <ScrollToTop />
       <Header />
       <div className="content-wrapper">
-        <Routes>
-          <Route path="/" element={<>
-            <Hero />
-            <Dashboard />
-            <Services />
-            <Testimonials />
-            <SpecialOffers />
-            <HowItWorks />
-            <FAQ />
-            <Footer />
-          </ >} />
-          <Route path="/fibre" element={<Fibre />} />
-          <Route path="/fibre/afrihost" element={<Afrihost />} />
-          <Route path="/phone" element={<Phone />} />
-          <Route path="/car-insurance" element={<Car />} />
-          <Route path="/credit-money" element={<Credit />} />
-          <Route path="/health-insurance" element={<Health />} />
-          <Route path="/funeral-cover" element={<Funeral />} />
-          {/* Add routes for other services */}
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<>
+              <Hero />
+              <Dashboard />
+              <Services />
+              <Testimonials />
+              <SpecialOffers />
+              <HowItWorks />
+              <FAQ />
+              <Footer />
+            </ >} />
+            <Route path="/fibre" element={<Fibre />} />
+            <Route path="/fibre/afrihost" element={<Afrihost />} />
+            <Route path="/phone" element={<Phone />} />
+            <Route path="/car-insurance" element={<Car />} />
+            <Route path="/credit-money" element={<Credit />} />
+            <Route path="/health-insurance" element={<Health />} />
+            <Route path="/funeral-cover" element={<Funeral />} />
+          </Routes>
+        </ScrollToTop>
       </div>
     </Router>
   );
