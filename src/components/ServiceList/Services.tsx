@@ -40,7 +40,7 @@ const Services: React.FC = () => {
         key={images[service][currentImageIndex]}
         initial={{ opacity: 0, x: 0, y: 0, bottom: 0, position: 'relative' }}  
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -500, y: -100000, bottom: 0, position: 'absolute' }}
+        exit={{ opacity: 0, x: -800, y: 0, bottom: 0, position: 'absolute' }}
         transition={{ duration: 1 }}
         className="image-container"
       >
@@ -51,12 +51,12 @@ const Services: React.FC = () => {
 
   return (
     <section id="services" className="py-8 bg-gray-100">
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Car Insurance */}
-          <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="card bg-white shadow-lg mx-0 overflow-hidden">
             <h2 className="text-2xl font-semibold text-center py-4">Our Services</h2>
-            <p className="text-center text-gray-700 py-4">We offer a range of insurance services to help you find the best policy for your needs.</p>
+            <p className="text-center text-gray-700 px-2 py-4">We offer a range of insurance services to help you find the best policy for your needs.</p>
             <div className="carousel">
               {renderCarousel('carInsurance')}
             </div>
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Life Insurance */}
-          <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="card bg-white shadow-lg overflow-hidden">
             <div className="carousel">
               {renderCarousel('lifeInsurance')}
             </div>
@@ -78,7 +78,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Home Insurance */}
-          <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="card bg-white shadow-lg overflow-hidden">
             <div className="carousel">
               {renderCarousel('homeInsurance')}
             </div>
