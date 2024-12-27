@@ -1,10 +1,10 @@
 import React from 'react';
-import './Car.module.scss';
+import './CarInsurance.module.scss';
 
-const Car: React.FC = () => {
+const CarInsurance: React.FC = () => {
   const insurances = [
-    { name: 'iWyze', price: 'R499', coverage: 'Comprehensive', link: '/company-a' },
-    { name: 'Santam', price: 'R599', coverage: 'Third-Party', link: '/company-b' },
+    { name: 'iWyze', price: 'R699', coverage: 'Comprehensive', link: '/company-a' },
+    { name: 'Santam', price: 'R799', coverage: 'Third-Party', link: '/company-b' },
     { name: 'Budget Insure', price: 'R699', coverage: 'Comprehensive', link: '/company-c' },
     // Add up to 6 insurance companies
   ];
@@ -34,4 +34,4 @@ const Car: React.FC = () => {
   );
 };
 
-export default Car;
+export default CarInsurance;
