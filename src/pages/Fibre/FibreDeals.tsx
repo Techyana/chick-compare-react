@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaGlobe, FaGlobeAfrica, FaRainbow } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import styles from './Fibre.module.scss';
+import styles from './FibreDeals.module.scss';
 
-const Fibre: React.FC = () => {
+const FibreDeals: React.FC = () => {
   const isps = [
     { name: 'Axxess', price: 'R599', speed: '100Mbps', link: '/fibre/axxess', icon: <FaGlobe size={48} className="text-teal-700" /> },
     { name: 'Afrihost', price: 'R699', speed: '200Mbps', link: '/fibre/afrihost', icon: <FaGlobeAfrica size={48} className="text-teal-700" /> },
@@ -36,4 +36,4 @@ const Fibre: React.FC = () => {
   );
 };
 
-export default Fibre;
+export default FibreDeals;

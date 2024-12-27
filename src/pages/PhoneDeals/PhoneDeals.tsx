@@ -1,9 +1,9 @@
 //*import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './Phone.module.scss';
+import './PhoneDeals.module.scss';
 
-const Phone: React.FC = () => {
+const PhoneDeals: React.FC = () => {
   const isps = [
     { name: 'axxess', price: 'R599', speed: '100Mbps', link: '/isp-one' },
     { name: 'afrihost', price: 'R699', speed: '200Mbps', link: '/isp-two' },
@@ -36,4 +36,4 @@ const Phone: React.FC = () => {
   );
 };
 
-export default Phone;
+export default PhoneDeals;

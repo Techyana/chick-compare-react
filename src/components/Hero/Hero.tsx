@@ -1,43 +1,96 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import styles from './Hero.module.scss';
 
+const images = [
+  {
+    src: '/assets/images/new-car-owner-noBG.png',
+    logo: '/assets/logos/santam-insurance-logo.png',
+    heading: 'Secure Your Vehicle',
+    link: '/car-insurance'
+  },
+  {
+    src: '/assets/images/OIGtren.png',
+    logo: '/assets/logos/afrihost-logo.png',
+    heading: 'Get the Best Internet Deals',
+    link: '/fibre-deals'
+  },
+  {
+    src: '/assets/images/Health-Check_NoBG.png',
+    logo: '/assets/logos/bonitas-logo.png',
+    heading: 'Your Health Matters',
+    link: '/health-insurance'
+  },
+  {
+    src: '/assets/images/guy-at-gym.png',
+    logo: '/assets/logos/virgin-active-logo-header.png',
+    heading: 'Gym Membership Deals',
+    link: '/gym-membership'
+  },
+  {
+    src: '/assets/images/lady-search-1.png',
+    logo: '/assets/logos/Vodacom-Logo.png',
+    heading: 'Get the Best Phone Deals',
+    link: '/phone-deals'
+  },
+  {
+    src: '/assets/images/CC-Lady-00.png',
+    logo: '/assets/logos/OLD_MUTUAL.png',
+    heading: 'Plan for the Future',
+    link: '/funeral-cover'
+  },
+  {
+    src: '/assets/images/OIG (7.png',
+    logo: '/assets/logos/sanlam-logo.svg',
+    heading: 'Grow Your Wealth',
+    link: '/investment-tool'
+  }
+];
+
 const Hero: React.FC = () => {
-  useEffect(() => {
-    const video = document.getElementById('hero-video') as HTMLVideoElement;
-    if (video) {
-      video.play().catch(error => {
-        console.error('Error attempting to play', error);
-      });
-    }
+  const [currentImage, setCurrentImage] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 4000); // Change image every 4 seconds
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="hero" className="relative h-screen overflow-hidden mt-10">
-      <video
-        id="hero-video"
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full object-contain z-0"
-      >
-        <source src="/assets/videos/205691-927672681_small.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className={styles.getQuote}>
-        <img src="/assets/images/get_a_quote_silver_badge_transparency.png" alt="Get a Quote" width="100" />
-      </div>
-      <div className={styles.eyesImg}>
-        <img src="/assets/images/cartoon-eyes.png" alt="Eyes" width="150" />
-      </div>
-      <div className={styles.heroText}>
-        <h2 className={`text-slate-900 text-4xl font-bold mb-4 ${styles.textMargin}`}>Compare Insurance and Financial Products Easily</h2>
-        <p className="text-slate-900 text-lg italic">Find the best deals from top South African companies</p>
-      </div>
-      <button className={`bg-sky-600 text-white text-lg font-bold py-2 px-4 rounded-lg mt-4 ${styles.getStarted}`}>
-        Get Started
-
-      </button>
-    </section>
+    <div className={styles.hero}>
+      <AnimatePresence>
+        {images.map((image, index) => (
+          index === currentImage && (
+            <motion.div
+              key={index}
+              className={styles.heroImage}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 2 }}
+            >
+              <img src={image.src} alt={image.heading} className={styles.heroImage} />
+              <img src={image.logo} alt="Company Logo" className={styles.heroLogo} />
+              <div className={styles.heroContent}>
+                <motion.h3
+                  className={styles.heroText}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 2, delay: 1 }}
+                >
+                  {image.heading}
+                </motion.h3>
+                <Link to={image.link} className={styles.heroButton}>Find Out More</Link>
+              </div>
+            </motion.div>
+          )
+        ))}
+      </AnimatePresence>
+      <div className={styles.gradientOverlay}></div>
+    </div>
   );
 };
 

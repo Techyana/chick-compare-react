@@ -9,10 +9,10 @@ import SpecialOffers from './components/SpecialOffers/SpecialOffers';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
-import Fibre from './pages/Fibre/Fibre';
+import FibreDeals from './pages/Fibre/FibreDeals';
 import Afrihost from './pages/Fibre/Afrihost/Afrihost';
-import Phone from './pages/Phone/Phone';
-import Car from './pages/Car/Car';
+import PhoneDeals from './pages/PhoneDeals/PhoneDeals';
+import CarInsurance from './pages/CarInsurance/CarInsurance';
 import Credit from './pages/Credit/Credit';
 import Health from './pages/Health/Health';
 import Funeral from './pages/Funeral/Funeral';
@@ -28,18 +28,18 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<>
               <Hero />
-              <Dashboard />
-              <Services />
-              <Testimonials />
-              <SpecialOffers />
-              <HowItWorks />
-              <FAQ />
-              <Footer />
             </ >} />
-            <Route path="/fibre" element={<Fibre />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/special-offers" element={<SpecialOffers />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Footer />} />
+            <Route path='/fibre-deals' element={<FibreDeals />} />
             <Route path="/fibre/afrihost" element={<Afrihost />} />
-            <Route path="/phone" element={<Phone />} />
-            <Route path="/car-insurance" element={<Car />} />
+            <Route path='/phone-deals' element={<PhoneDeals />} />
+            <Route path="/car-insurance" element={<CarInsurance />} />
             <Route path="/credit-money" element={<Credit />} />
             <Route path="/health-insurance" element={<Health />} />
             <Route path="/funeral-cover" element={<Funeral />} />
