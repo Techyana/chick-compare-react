@@ -84,8 +84,7 @@ const Hero: React.FC = () => {
                   {image.heading}
                 </motion.h3>
                 <div className={styles.buttonGroup}>
-                  <Link to={image.link} className={styles.heroButton}>View</Link>
-                  <Link to="/dashboard" className={styles.heroButton}>Services</Link>
+                  <Link to="/dashboard" className={styles.heroButton}>Get Started</Link>
                 </div>
               </div>
             </motion.div>

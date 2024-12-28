@@ -7,67 +7,84 @@
   margin: 0px;
 }
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.heroImage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
 }
 
-.heroContent {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.text-center {
   text-align: center;
-  z-index: 2;
-  color: white;
 }
 
-.heroLogo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 100px;
-  height: auto;
-  z-index: 2;
+.text-gray-700 {
+  color: #4a5568;
 }
 
-.heroText {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+.text-teal-500 {
+  color: #38b2ac;
 }
 
-.buttonGroup {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+.text-teal-700 {
+  color: #2c7a7b;
 }
 
-.heroButton {
-  background-color: #ff6600;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  z-index: 4; /* Increase z-index */
-  pointer-events: auto; /* Ensure pointer events are enabled */
+.text-teal-900 {
+  color: #234e52;
 }
 
-.heroButton:hover {
-  background-color: #ff4500;
+.hover\:text-teal-900:hover {
+  color: #234e52;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.transition-transform {
+  transition: transform 0.3s;
+}
+
+.transform {
+  transform: scale(1);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=CarInsurance.module.css.map */

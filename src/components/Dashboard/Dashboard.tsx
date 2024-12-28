@@ -10,8 +10,8 @@ interface Service {
 }
 
 const services: Service[] = [
-    { icon: <FaWifi size={48} className="text-teal-700" />, name: 'Fibre', link: '/fibre' },
-    { icon: <FaMobile size={48} className="text-teal-700" />, name: 'Phones', link: '/phone' },
+    { icon: <FaWifi size={48} className="text-teal-700" />, name: 'Fibre', link: '/fibre-deals' },
+    { icon: <FaMobile size={48} className="text-teal-700" />, name: 'Phones', link: '/phone-deals' },
     { icon: <FaCar size={48} className="text-teal-700" />, name: 'Car', link: '/car-insurance' },
     { icon: <FaPiggyBank size={48} className="text-teal-700" />, name: 'Credit', link: '/credit-money' },
     { icon: <FaHeartbeat size={48} className="text-teal-700" />, name: 'Health', link: '/health-insurance' },
@@ -21,9 +21,8 @@ const services: Service[] = [
 const Dashboard: React.FC = () => {
     return (
         <section className={styles.bgLayer}>
-            <img src="/assets/images/monster-banner-services.png" alt="Cheap-Compare" />
             <div className={`container mx-auto ${styles.serviceContainer}`}>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-36">
                     {services.map((service, index) => (
                         <div key={index} className="text-center bg-white shadow-lg rounded-lg p-4">
                             <Link to={service.link} className="block">
