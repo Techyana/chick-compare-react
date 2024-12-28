@@ -83,13 +83,15 @@ const Hero: React.FC = () => {
                 >
                   {image.heading}
                 </motion.h3>
-                <Link to={image.link} className={styles.heroButton}>Find Out More</Link>
+                <div className={styles.buttonGroup}>
+                  <Link to={image.link} className={styles.heroButton}>View</Link>
+                  <Link to="/dashboard" className={styles.heroButton}>Services</Link>
+                </div>
               </div>
             </motion.div>
           )
         ))}
       </AnimatePresence>
-      <div className={styles.gradientOverlay}></div>
     </div>
   );
 };
