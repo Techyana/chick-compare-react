@@ -12,7 +12,7 @@ const plans = [
 
 const Funeral: React.FC = () => {
   return (
-    <div className={`relative h-screen mt-32 ${styles.bgContainer}`}>
+    <div className={`relative h-screen pt-40 ${styles.bgContainer}`}>
       <div className={`absolute inset-0 bg-cover bg-center ${styles['absolute-bg']}`}>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-75"></div>
       </div>

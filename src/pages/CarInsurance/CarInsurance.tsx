@@ -13,7 +13,7 @@ const insurances = [
 
 const CarInsurance: React.FC = () => {
   return (
-    <div className={`relative h-screen mt-60 ${styles.bgContainer}`}>
+    <div className={`relative h-screen pt-96 mt-12 ${styles.bgContainer}`}>
       <div className="absolute inset-0 car-insurance-background">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-75"></div>
       </div>

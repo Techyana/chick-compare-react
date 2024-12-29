@@ -26,9 +26,7 @@ const App: React.FC = () => {
       <div className="content-wrapper">
         <ScrollToTop>
           <Routes>
-            <Route path="/" element={<>
-              <Hero />
-            </ >} />
+            <Route path="/" element={<Hero />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/services" element={<Services />} />
             <Route path="/testimonials" element={<Testimonials />} />
