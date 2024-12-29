@@ -12,22 +12,11 @@ const isps = [
 
 const FibreDeals: React.FC = () => {
   return (
-    <div className={`relative h-screen pt-40 ${styles.bgContainer}`}>
+    <div className={`relative h-screen pt-60 ${styles.bgContainer}`}>
       <div className={`absolute inset-0 bg-cover bg-center ${styles['absolute-bg']}`}>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-75"></div>
       </div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full p-4">
-        <motion.div
-          className="flex items-center mb-4"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
-            <FaArrowLeft size={24} />
-          </Link>
-          <h1 className="text-3xl font-bold ml-2 text-white">Fibre Deals</h1>
-        </motion.div>
         <motion.div
           className="bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg text-center"
           initial={{ opacity: 0, y: 50 }}
@@ -37,7 +26,7 @@ const FibreDeals: React.FC = () => {
           <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
                       <FaArrowLeft size={24} />
           </Link>
-          <h2 className="text-2xl font-semibold mb-4">Find the best Fibre & LTE deals available...</h2>
+          <h3 className="text-1xl font-semibold mb-4 bg-slate-50 p-4 rounded-lg">Find the best Fibre & LTE deals available...</h3>
           <div className="flex justify-center mb-4">
             <img src="/public/assets/logos/wifi-neon.jpg" alt="Fibre Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
           </div>
