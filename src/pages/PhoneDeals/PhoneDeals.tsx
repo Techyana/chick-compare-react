@@ -2,53 +2,66 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './PhoneDeals.module.scss';
+import styles from './PhoneDeals.module.scss';
+
+const isps = [
+  { name: 'axxess', price: 'R599', speed: '100Mbps', link: '/isp-one', logo: '/assets/logos/Axxess-logo.webp' },
+  { name: 'afrihost', price: 'R699', speed: '200Mbps', link: '/isp-two', logo: '/assets/logos/AfriHost-Logo.png' },
+  { name: 'rain', price: 'R799', speed: '300Mbps', link: '/isp-three', logo: '/assets/logos/Rain-Logo.png' },
+];
 
 const PhoneDeals: React.FC = () => {
-  const isps = [
-    { name: 'axxess', price: 'R599', speed: '100Mbps', link: '/isp-one' },
-    { name: 'afrihost', price: 'R699', speed: '200Mbps', link: '/isp-two' },
-    { name: 'rain', price: 'R799', speed: '300Mbps', link: '/isp-three' },
-  ];
-
   return (
-    <div className="container mx-auto p-4 mt-20">
-      <motion.div
-        className="flex items-center mb-4"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
-          <FaArrowLeft size={24} />
-        </Link>
-        <h1 className="text-3xl font-bold ml-2">Phone Deals</h1>
-      </motion.div>
-      <motion.p
-        className="text-center mt-2 text-gray-700"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        Find the best Phone & LTE deals available...
-      </motion.p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        {isps.map((isp, index) => (
-          <motion.div
-            key={index}
-            className="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition-transform duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-          >
-            <Link to={isp.link} className="block">
-              <h3 className="text-xl font-bold">{isp.name}</h3>
-              <p className="text-gray-700 mt-2">Price: {isp.price}</p>
-              <p className="text-gray-700 mt-2">Speed: {isp.speed}</p>
-              <span className="text-teal-700 hover:text-teal-900 mt-4 inline-block">Compare</span>
+    <div className={`relative h-screen mt-24 ${styles.bgContainer}`}>
+      <div className={`absolute inset-0 bg-cover bg-center ${styles['absolute-bg']}`}>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-75"></div>
+      </div>
+      <div className="relative z-10 flex flex-col items-center justify-center h-full p-4">
+        <motion.div
+          className="flex items-center mb-4"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+        </motion.div>
+        <motion.div
+          className="bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg text-center"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+            <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
+                        <FaArrowLeft size={24} />
             </Link>
-          </motion.div>
-        ))}
+          <h2 className="text-2xl font-semibold mb-4">Find the best Phone & LTE deals available...</h2>
+          <div className="flex justify-center mb-4">
+            <img src="/assets/logos/neon-phone-logo.avif" alt="Phone Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
+          </div>
+          <ul className="space-y-4">
+            {isps.map((isp, index) => (
+              <li key={index}>
+                <motion.div
+                  className="flex items-center justify-between bg-white bg-opacity-75 p-4 rounded-lg shadow-md"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+                  <div className="flex items-center">
+                    <img src={isp.logo} alt={`${isp.name} Logo`} className="w-12 h-12 rounded-full mr-4" />
+                    <div>
+                      <h3 className="text-lg font-bold">{isp.name}</h3>
+                      <p className="text-gray-700">Price: {isp.price}</p>
+                      <p className="text-gray-700">Speed: {isp.speed}</p>
+                    </div>
+                  </div>
+                  <Link to={isp.link} className="text-teal-700 bg-amber-400 p-2 rounded-md hover:text-teal-900">
+                    Compare
+                  </Link>
+                </motion.div>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
       </div>
     </div>
   );

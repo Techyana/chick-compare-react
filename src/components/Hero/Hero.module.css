@@ -9,7 +9,7 @@
 
 .hero {
   position: relative;
-  padding-top: 8rem; /* Adjust padding to account for header height */
+  padding-top: 6rem; /* Adjust padding to account for header height */
   width: 100%;
   height: calc(100vh - 0rem); /* Adjust height to fill the remaining viewport height */
   overflow: hidden;
