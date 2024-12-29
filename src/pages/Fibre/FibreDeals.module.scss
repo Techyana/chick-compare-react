@@ -15,7 +15,14 @@
 }
 
 .bgContainer {
-  background-color: #1979d8;
+  background-color: #1979d8;  
+}
+
+.bgImage {
+  background: url('/assets/images/cc-kid-3_noBG.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3 {

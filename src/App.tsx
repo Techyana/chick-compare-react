@@ -33,7 +33,6 @@ const App: React.FC = () => {
             <Route path="/special-offers" element={<SpecialOffers />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/contact" element={<Footer />} />
             <Route path='/fibre-deals' element={<FibreDeals />} />
             <Route path="/fibre/afrihost" element={<Afrihost />} />
             <Route path='/phone-deals' element={<PhoneDeals />} />
@@ -42,6 +41,7 @@ const App: React.FC = () => {
             <Route path="/health-insurance" element={<Health />} />
             <Route path="/funeral-cover" element={<Funeral />} />
           </Routes>
+          <Footer />
         </ScrollToTop>
       </div>
     </Router>

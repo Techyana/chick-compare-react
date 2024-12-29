@@ -12,7 +12,7 @@ const images = [
   },
   {
     src: '/assets/images/OIGtren.png',
-    logo: '/assets/logos/afrihost-logo.png',
+    logo: '/assets/logos/AfriHost-Logo.png',
     heading: 'Get the Best Internet Deals',
     link: '/fibre-deals'
   },
