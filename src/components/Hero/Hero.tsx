@@ -5,7 +5,7 @@ import styles from './Hero.module.scss';
 
 const images = [
   {
-    src: '/assets/images/new-car-owner-noBG.png',
+    src: '/assets/images/new-car-owner-3.jpg',
     logo: '/assets/logos/santam-insurance-logo.png',
     heading: 'Secure Your Vehicle',
     link: '/car-insurance'
