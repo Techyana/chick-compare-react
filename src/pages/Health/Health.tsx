@@ -36,7 +36,7 @@ const Health: React.FC = () => {
         </motion.div>
           <h2 className="text-2xl font-semibold mb-4">Find the best Health & LTE deals available...</h2>
           <div className="flex justify-center mb-4">
-            <img src="/assets/images/health-icon.png" alt="Health Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
+            <img src="/assets/logos/health-logo.jpg" alt="Health Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
           </div>
           <ul className="space-y-4">
             {isps.map((isp, index) => (

@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
     return (
         <section className={styles.bgLayer}>
             <div className={`container mx-auto ${styles.serviceContainer}`}>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-36">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-56">
                     {services.map((service, index) => (
                         <div key={index} className="text-center bg-white shadow-lg rounded-lg p-4">
                             <Link to={service.link} className="block">

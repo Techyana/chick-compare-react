@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
           <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
-          <p className="text-sm">123 Main Road, Table View, Cape Farms, Western Cape</p>
+          <p className="text-sm">23 Main Road, Table View, Cape Farms, Western Cape</p>
           <p className="text-sm">Email: info@cheapcompare.co.za</p>
           <p className="text-sm">Phone: (+27) 78 736 4020</p>
         </div>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="text-center text-sm mt-4">
-        &copy; 2024 Cheap Compare. All rights reserved.
+        &copy; 2025 Cheap Compare. All rights reserved.
       </div>
     </footer>
   );

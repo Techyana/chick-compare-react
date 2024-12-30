@@ -31,11 +31,14 @@ const CarInsurance: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
+          
+        </motion.div>
+          <div className="flex items-center mb-4">
           <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
             <FaArrowLeft size={24} />
           </Link>
-        </motion.div>
           <h2 className="text-2xl font-semibold mb-4">Find the best car insurance deals tailored for you.</h2>
+          </div>
           <div className="flex justify-center mb-4">
             <img src="/assets/logos/neon-car-logo.png" alt="Car Insurance Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
           </div>

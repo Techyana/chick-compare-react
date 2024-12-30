@@ -24,19 +24,21 @@ const Credit: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <motion.div
+        <motion.div
           className="flex items-center mb-4"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link to="/dashboard" className="text-teal-700 hover:text-teal-900 flex items-center">
-            <FaArrowLeft size={24} />
-          </Link>
+          <div className="flex items-center mb-4">
+                  <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
+                    <FaArrowLeft size={24} />
+                  </Link>
+          <h2 className="text-xl font-semibold mb-4">Find the best Credit & LTE deals available.</h2>
+          </div>
         </motion.div>
-          <h2 className="text-2xl font-semibold mb-4">Find the best Credit & LTE deals available...</h2>
           <div className="flex justify-center mb-4">
-            <img src="/assets/images/credit-icon.png" alt="Credit Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
+            <img src="/assets/logos/credit-card-logo.jpg" alt="Credit Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
           </div>
           <ul className="space-y-4">
             {isps.map((isp, index) => (

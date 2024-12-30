@@ -36,7 +36,7 @@ const Funeral: React.FC = () => {
         </motion.div>
           <h2 className="text-2xl font-semibold mb-4">Find the best funeral plans available...</h2>
           <div className="flex justify-center mb-4">
-            <img src="/assets/images/funeral-icon.png" alt="Funeral Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
+            <img src="/assets/logos/funeral-cover-logo.jpg" alt="Funeral Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
           </div>
           <ul className="space-y-4">
             {plans.map((plan, index) => (

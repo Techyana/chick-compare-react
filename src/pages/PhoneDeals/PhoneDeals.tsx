@@ -30,10 +30,12 @@ const PhoneDeals: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          <div className="flex items-center mb-4">
             <Link to="/dashboard" className="text-teal-700 hover:text-teal-900">
                         <FaArrowLeft size={24} />
             </Link>
-          <h2 className="text-2xl font-semibold mb-4">Find the best Phone & LTE deals available...</h2>
+          <h2 className="text-xl font-semibold mb-4">Find the best Phone & LTE deals available.</h2>
+          </div>
           <div className="flex justify-center mb-4">
             <img src="/assets/logos/neon-phone-logo.avif" alt="Phone Icon" className="w-24 h-24 rounded-full border-4 border-teal-500" />
           </div>
